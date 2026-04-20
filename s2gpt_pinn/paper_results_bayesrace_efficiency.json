@@ -1,0 +1,28 @@
+{
+  "build_ms": {
+    "physics": 343.0503399576992,
+    "surrogate_native": 303.8507450837642,
+    "surrogate_callback": 10.265324031934142
+  },
+  "solve_ms": {
+    "physics": {
+      "mean_ms": 10.431296678143553,
+      "p95_ms": 11.519026575842862,
+      "max_ms": 17.803740920498967
+    },
+    "surrogate_native": {
+      "mean_ms": 22.786410350818187,
+      "p95_ms": 27.399167075054713,
+      "max_ms": 31.767382053658366
+    },
+    "surrogate_callback": {
+      "mean_ms": 6974.77835524769,
+      "p95_ms": 9176.264175603865,
+      "max_ms": 9202.92203896679
+    }
+  },
+  "notes": {
+    "callback_solver": "limited-memory Hessian (no 2nd derivatives through callback)",
+    "surrogate": "toy untrained ensemble for timing only"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "physics_rebuild_ms": 20.152783021330833,
+  "physics_solve_ms": {
+    "mean": 10.49895342051362,
+    "p95": 12.526272615650669,
+    "max": 15.387039980851114
+  },
+  "surrogate_solve_ms": {
+    "mean": 719.2138401170572,
+    "p95": 858.6403827357572,
+    "max": 1135.1594950538129
+  },
+  "mode_b_update_ms": {
+    "mean": 7.460894964363736,
+    "p95": 9.697385062463582,
+    "max": 13.85417697019875
+  },
+  "change_step": 60,
+  "n_steps": 120,
+  "notes": {
+    "physics_baseline": "rebuild Dynamic + setupNLP at change step (matches deep_dynamics scripts)",
+    "surrogate": "native CasADi export with weights as NLP parameters (Mode B), no rebuild",
+    "surrogate_weights": "computed online from measured dv via OnlineLinearRegressor (trained library /home/enzo/HYDRA/NMPC/s2gpt_pinn/orca_library_trained)"
+  }
+}

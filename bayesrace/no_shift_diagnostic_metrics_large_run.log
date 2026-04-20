@@ -1,0 +1,84 @@
+No-Shift Diagnostic — Metrics Log
+Generated: 2026-01-30T19:56:51.259570
+Regime shift time: t = 2.2 s
+Methods: A=Baseline+Shift, B=Adaptive+Shift, C=Baseline+NoShift, D=Adaptive+NoShift
+
+================================================================================
+DIAGNOSTIC PHASE: ODE Surrogate
+================================================================================
+
+--- Regime: Friction Only (Severe) ---
+  [A] Baseline+Shift
+      Pre  (t<=2.2s): RMSE vx=0.3124, vy=0.0563, psi=1.6090, position=0.0602
+      Post (t>2.2s): RMSE vx=0.2374, vy=0.3579, psi=2.0895, position=0.1214
+      Degradation (post-pre): vx -0.0750 (-24.0%), vy +0.3016 (+535.4%), position +0.0612 (+101.7%)
+  [B] Adaptive+Shift
+      Pre  (t<=2.2s): RMSE vx=0.3281, vy=0.0532, psi=1.5925, position=0.0546
+      Post (t>2.2s): RMSE vx=0.2371, vy=0.2566, psi=2.0027, position=0.0617
+      Degradation (post-pre): vx -0.0911 (-27.7%), vy +0.2034 (+382.4%), position +0.0071 (+12.9%)
+  [C] Baseline+NoShift
+      Pre  (t<=2.2s): RMSE vx=0.3124, vy=0.0563, psi=1.6090, position=0.0602
+      Post (t>2.2s): RMSE vx=0.1617, vy=0.0646, psi=1.9470, position=0.0389
+      Degradation (post-pre): vx -0.1507 (-48.2%), vy +0.0082 (+14.6%), position -0.0213 (-35.3%)
+  [D] Adaptive+NoShift
+      Pre  (t<=2.2s): RMSE vx=0.3281, vy=0.0532, psi=1.5925, position=0.0546
+      Post (t>2.2s): RMSE vx=0.1702, vy=0.0593, psi=1.9284, position=0.0333
+      Degradation (post-pre): vx -0.1580 (-48.1%), vy +0.0061 (+11.4%), position -0.0213 (-39.0%)
+
+--- Regime: All Parameters (Severe) ---
+  [A] Baseline+Shift
+      Pre  (t<=2.2s): RMSE vx=0.3124, vy=0.0563, psi=1.6090, position=0.0602
+      Post (t>2.2s): RMSE vx=0.3540, vy=0.5598, psi=1.7765, position=0.5777
+      Degradation (post-pre): vx +0.0416 (+13.3%), vy +0.5034 (+893.6%), position +0.5175 (+859.6%)
+  [B] Adaptive+Shift
+      Pre  (t<=2.2s): RMSE vx=0.3281, vy=0.0532, psi=1.5925, position=0.0546
+      Post (t>2.2s): RMSE vx=0.2052, vy=0.5459, psi=2.1639, position=0.2882
+      Degradation (post-pre): vx -0.1229 (-37.5%), vy +0.4927 (+926.2%), position +0.2336 (+427.8%)
+  [C] Baseline+NoShift
+      Pre  (t<=2.2s): RMSE vx=0.3124, vy=0.0563, psi=1.6090, position=0.0602
+      Post (t>2.2s): RMSE vx=0.1617, vy=0.0646, psi=1.9470, position=0.0389
+      Degradation (post-pre): vx -0.1507 (-48.2%), vy +0.0082 (+14.6%), position -0.0213 (-35.3%)
+  [D] Adaptive+NoShift
+      Pre  (t<=2.2s): RMSE vx=0.3281, vy=0.0532, psi=1.5925, position=0.0546
+      Post (t>2.2s): RMSE vx=0.1702, vy=0.0593, psi=1.9284, position=0.0333
+      Degradation (post-pre): vx -0.1580 (-48.1%), vy +0.0061 (+11.4%), position -0.0213 (-39.0%)
+
+================================================================================
+DIAGNOSTIC PHASE: ODE Surrogate + Aleatoric Noise
+================================================================================
+
+--- Regime: Friction Only (Severe) ---
+  [A] Baseline+Shift
+      Pre  (t<=2.2s): RMSE vx=0.3087, vy=0.0588, psi=1.5859, position=0.0591
+      Post (t>2.2s): RMSE vx=0.2286, vy=0.3427, psi=2.0856, position=0.1134
+      Degradation (post-pre): vx -0.0801 (-26.0%), vy +0.2838 (+482.4%), position +0.0543 (+91.8%)
+  [B] Adaptive+Shift
+      Pre  (t<=2.2s): RMSE vx=0.3366, vy=0.0535, psi=1.5822, position=0.0542
+      Post (t>2.2s): RMSE vx=0.2352, vy=0.2609, psi=2.0116, position=0.0653
+      Degradation (post-pre): vx -0.1014 (-30.1%), vy +0.2073 (+387.3%), position +0.0111 (+20.5%)
+  [C] Baseline+NoShift
+      Pre  (t<=2.2s): RMSE vx=0.3022, vy=0.0573, psi=1.6206, position=0.0610
+      Post (t>2.2s): RMSE vx=0.1593, vy=0.0643, psi=1.9459, position=0.0390
+      Degradation (post-pre): vx -0.1429 (-47.3%), vy +0.0070 (+12.2%), position -0.0220 (-36.1%)
+  [D] Adaptive+NoShift
+      Pre  (t<=2.2s): RMSE vx=0.3366, vy=0.0540, psi=1.5839, position=0.0548
+      Post (t>2.2s): RMSE vx=0.1742, vy=0.0593, psi=1.9299, position=0.0338
+      Degradation (post-pre): vx -0.1624 (-48.3%), vy +0.0052 (+9.7%), position -0.0211 (-38.4%)
+
+--- Regime: All Parameters (Severe) ---
+  [A] Baseline+Shift
+      Pre  (t<=2.2s): RMSE vx=0.3108, vy=0.0566, psi=1.6013, position=0.0607
+      Post (t>2.2s): RMSE vx=0.3512, vy=0.5596, psi=1.7871, position=0.5769
+      Degradation (post-pre): vx +0.0403 (+13.0%), vy +0.5031 (+889.0%), position +0.5161 (+849.6%)
+  [B] Adaptive+Shift
+      Pre  (t<=2.2s): RMSE vx=0.3378, vy=0.0541, psi=1.5821, position=0.0554
+      Post (t>2.2s): RMSE vx=0.2221, vy=0.5385, psi=2.0938, position=0.3197
+      Degradation (post-pre): vx -0.1156 (-34.2%), vy +0.4844 (+895.1%), position +0.2644 (+477.6%)
+  [C] Baseline+NoShift
+      Pre  (t<=2.2s): RMSE vx=0.3109, vy=0.0576, psi=1.6159, position=0.0601
+      Post (t>2.2s): RMSE vx=0.1597, vy=0.0657, psi=1.9478, position=0.0394
+      Degradation (post-pre): vx -0.1512 (-48.6%), vy +0.0082 (+14.2%), position -0.0206 (-34.4%)
+  [D] Adaptive+NoShift
+      Pre  (t<=2.2s): RMSE vx=0.3346, vy=0.0519, psi=1.5841, position=0.0540
+      Post (t>2.2s): RMSE vx=0.1720, vy=0.0595, psi=1.9261, position=0.0332
+      Degradation (post-pre): vx -0.1625 (-48.6%), vy +0.0076 (+14.7%), position -0.0208 (-38.5%)

@@ -1,0 +1,207 @@
+{
+  "config": {
+    "out_dir": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/phase3_ablation_results/specs_4_hd128_layers2_topk2/efficiency",
+    "lib_dir": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/phase3_ablation_results/specs_4_hd128_layers2_topk2/library",
+    "seed": 42,
+    "horizon": 10,
+    "Ts": 0.02,
+    "mu_fixed": 1.0,
+    "cost_Q": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "cost_P": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "cost_R": [
+      [
+        0.005,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "params_name": "ORCA(control=pwm)",
+    "track": "ETHZ(reference=optimal,longer=True)"
+  },
+  "models": {
+    "physics": {
+      "build_ms": 400.87371300000996,
+      "build_verbose_ms": 26.31376099998306,
+      "nlp_meta": {
+        "horizon": 10,
+        "Ts": 0.02,
+        "n_states": 6,
+        "n_inputs": 2,
+        "track_cons": false,
+        "n_decision": 86,
+        "n_constraints": 126,
+        "ipopt": {
+          "print_level": 0,
+          "print_timing_statistics": "no",
+          "max_iter": 100
+        },
+        "casadi": {
+          "expand": true
+        }
+      },
+      "dynamics_bench": {
+        "eval_ms_per_call": 0.011319470000453294,
+        "jac_ms_per_call": 0.009688999999780208,
+        "jac_sparsity": {
+          "rows": 6,
+          "cols": 8,
+          "nnz": 21,
+          "density": 0.4375
+        }
+      },
+      "symbolic_bench": {
+        "g_ms_per_call": 0.02102045000065118,
+        "jac_g_x_ms_per_call": 0.01973094999557361,
+        "hess_lag_ms_per_call": 0.04173944999929517,
+        "jac_g_x_sparsity": {
+          "rows": 126,
+          "cols": 86,
+          "nnz": 384,
+          "density": 0.035437430786267994
+        },
+        "hess_lag_sparsity": {
+          "rows": 86,
+          "cols": 86,
+          "nnz": 296,
+          "density": 0.04002163331530557
+        }
+      },
+      "jacobian_sparsity": {
+        "rows": 126.0,
+        "cols": 86.0,
+        "nnz": 384.0,
+        "density": 0.035437430786267994,
+        "density_percent": 3.5437430786267994
+      },
+      "solve_ms": {
+        "mean_ms": 8.748322149995147,
+        "p95_ms": 11.244112499889507,
+        "max_ms": 26.555567999821506,
+        "min_ms": 6.232942999986335,
+        "std_ms": 3.297756853105908,
+        "n_steps": 40,
+        "ipopt_timing_stats": {}
+      },
+      "ipopt_verbose_solve_ms": {
+        "mean_ms": 15.216871999882642,
+        "p95_ms": 15.216871999882642,
+        "max_ms": 15.216871999882642,
+        "min_ms": 15.216871999882642,
+        "std_ms": 0.0,
+        "n_steps": 1,
+        "ipopt_timing_stats": {
+          "raw_found": false
+        }
+      },
+      "artifacts": {
+        "ipopt_log": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/phase3_ablation_results/specs_4_hd128_layers2_topk2/efficiency/ipopt_physics.log",
+        "jacobian_sparsity_png": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/phase3_ablation_results/specs_4_hd128_layers2_topk2/efficiency/jacobian_sparsity_physics.png"
+      }
+    },
+    "surrogate_native": {
+      "build_ms": 11694.29047299991,
+      "build_verbose_ms": 11779.753179999943,
+      "nlp_meta": {
+        "horizon": 10,
+        "Ts": 0.02,
+        "n_states": 6,
+        "n_inputs": 2,
+        "track_cons": false,
+        "n_decision": 86,
+        "n_constraints": 126,
+        "ipopt": {
+          "print_level": 0,
+          "print_timing_statistics": "no",
+          "max_iter": 100
+        },
+        "casadi": {
+          "expand": true
+        }
+      },
+      "dynamics_bench": {
+        "eval_ms_per_call": 0.20366379999904893,
+        "jac_ms_per_call": 0.8734851050004363,
+        "jac_sparsity": {
+          "rows": 6,
+          "cols": 8,
+          "nnz": 22,
+          "density": 0.4583333333333333
+        }
+      },
+      "symbolic_bench": {
+        "g_ms_per_call": 1.8072318999911658,
+        "jac_g_x_ms_per_call": 9.729397399991285,
+        "hess_lag_ms_per_call": 19.71451755000744,
+        "jac_g_x_sparsity": {
+          "rows": 126,
+          "cols": 86,
+          "nnz": 394,
+          "density": 0.036360280546327055
+        },
+        "hess_lag_sparsity": {
+          "rows": 86,
+          "cols": 86,
+          "nnz": 356,
+          "density": 0.04813412655489454
+        }
+      },
+      "jacobian_sparsity": {
+        "rows": 126.0,
+        "cols": 86.0,
+        "nnz": 394.0,
+        "density": 0.036360280546327055,
+        "density_percent": 3.636028054632706
+      },
+      "solve_ms": {
+        "mean_ms": 466.9046886749982,
+        "p95_ms": 495.281202800129,
+        "max_ms": 503.5627349998322,
+        "min_ms": 401.67986699998437,
+        "std_ms": 18.250851218420006,
+        "n_steps": 40,
+        "ipopt_timing_stats": {}
+      },
+      "ipopt_verbose_solve_ms": {
+        "mean_ms": 467.24828400010665,
+        "p95_ms": 467.24828400010665,
+        "max_ms": 467.24828400010665,
+        "min_ms": 467.24828400010665,
+        "std_ms": 0.0,
+        "n_steps": 1,
+        "ipopt_timing_stats": {
+          "raw_found": false
+        }
+      },
+      "artifacts": {
+        "ipopt_log": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/phase3_ablation_results/specs_4_hd128_layers2_topk2/efficiency/ipopt_surrogate_native.log",
+        "jacobian_sparsity_png": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/phase3_ablation_results/specs_4_hd128_layers2_topk2/efficiency/jacobian_sparsity_surrogate_native.png"
+      }
+    }
+  },
+  "notes": {
+    "purpose": "identical BayesRace OCP, swapped dynamics only",
+    "track_cons": false,
+    "ipopt_timing_stats": "enabled"
+  }
+}

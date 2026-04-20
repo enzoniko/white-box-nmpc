@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "lib_dir": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/orca_library_trained",
+    "out_root": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/paper_synth_multiseed",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "ci_resamples": 1000,
+    "ci_alpha": 0.05,
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+    "platform": {
+      "system": "Linux",
+      "release": "6.6.87.1-microsoft-standard-WSL2",
+      "machine": "x86_64"
+    },
+    "passthrough_args": [
+      "--T",
+      "400",
+      "--dt",
+      "0.02",
+      "--mu_step",
+      "200",
+      "--out_multiplier",
+      "1.25"
+    ]
+  },
+  "metrics": {
+    "one_step_state_error.rmse_in_manifold": {
+      "mean": 0.7009694561300808,
+      "std": 0.2538332641830712,
+      "ci_lower": 0.4961600347079673,
+      "ci_upper": 0.9451098892184989,
+      "n": 5
+    },
+    "one_step_state_error.p95_in_manifold": {
+      "mean": 2.238658182374705,
+      "std": 1.375061303628997,
+      "ci_lower": 1.0991988148516967,
+      "ci_upper": 3.378239213980074,
+      "n": 5
+    },
+    "one_step_state_error.rmse_out_of_manifold": {
+      "mean": 1.952433467304567,
+      "std": 0.8393803105545098,
+      "ci_lower": 1.3515078018697013,
+      "ci_upper": 2.8059761006835826,
+      "n": 5
+    },
+    "one_step_state_error.p95_out_of_manifold": {
+      "mean": 6.382237628444593,
+      "std": 2.389366148132053,
+      "ci_lower": 4.257492583682944,
+      "ci_upper": 8.506982673206243,
+      "n": 5
+    },
+    "one_step_vx_error.rmse_in_manifold": {
+      "mean": 0.02409775643151658,
+      "std": 0.0024833109477275174,
+      "ci_lower": 0.022297095004278723,
+      "ci_upper": 0.02652464833010084,
+      "n": 5
+    },
+    "one_step_vx_error.p95_in_manifold": {
+      "mean": 0.05628990289536939,
+      "std": 0.0056945439718802055,
+      "ci_lower": 0.0517707839567767,
+      "ci_upper": 0.06189461997031305,
+      "n": 5
+    },
+    "one_step_vx_error.rmse_out_of_manifold": {
+      "mean": 0.02443807779555237,
+      "std": 0.0020993916810882933,
+      "ci_lower": 0.0229544037119782,
+      "ci_upper": 0.026523455981201087,
+      "n": 5
+    },
+    "one_step_vx_error.p95_out_of_manifold": {
+      "mean": 0.05874034145278824,
+      "std": 0.0064616100286043615,
+      "ci_lower": 0.05367614688575876,
+      "ci_upper": 0.06529381789123778,
+      "n": 5
+    },
+    "one_step_accel_error.rmse_in_manifold": {
+      "mean": 35.04847154023217,
+      "std": 12.691663105041417,
+      "ci_lower": 24.80800057636759,
+      "ci_upper": 47.25549313181758,
+      "n": 5
+    },
+    "one_step_accel_error.p95_in_manifold": {
+      "mean": 111.93290515883079,
+      "std": 68.75306411936997,
+      "ci_lower": 54.95993750439171,
+      "ci_upper": 168.9119560339456,
+      "n": 5
+    },
+    "one_step_accel_error.rmse_out_of_manifold": {
+      "mean": 97.62167165524232,
+      "std": 41.96901532263939,
+      "ci_lower": 67.57538854287371,
+      "ci_upper": 140.2988031151792,
+      "n": 5
+    },
+    "one_step_accel_error.p95_out_of_manifold": {
+      "mean": 319.11187785947453,
+      "std": 119.46830606038635,
+      "ci_lower": 212.87462694788655,
+      "ci_upper": 425.3491287710625,
+      "n": 5
+    },
+    "one_step_dvx_error.rmse_in_manifold": {
+      "mean": 1.2048878089831825,
+      "std": 0.12416555019734278,
+      "ci_lower": 1.1148547362594812,
+      "ci_upper": 1.326232406808978,
+      "n": 5
+    },
+    "one_step_dvx_error.p95_in_manifold": {
+      "mean": 2.8144951156553257,
+      "std": 0.28472721745261204,
+      "ci_lower": 2.5885391480689566,
+      "ci_upper": 3.0947309860173036,
+      "n": 5
+    },
+    "one_step_dvx_error.rmse_out_of_manifold": {
+      "mean": 1.2219038813230096,
+      "std": 0.10496958663274074,
+      "ci_lower": 1.147720175040434,
+      "ci_upper": 1.3261727927565705,
+      "n": 5
+    },
+    "one_step_dvx_error.p95_out_of_manifold": {
+      "mean": 2.937017083831581,
+      "std": 0.32308051660384157,
+      "ci_lower": 2.683807348497516,
+      "ci_upper": 3.264690921549289,
+      "n": 5
+    }
+  }
+}

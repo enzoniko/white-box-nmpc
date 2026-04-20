@@ -1,0 +1,25 @@
+{
+  "physics_rebuild_ms": 17.560738953761756,
+  "physics_solve_ms": {
+    "mean": 10.237574278532216,
+    "p95": 12.74635453009978,
+    "max": 16.266713966615498
+  },
+  "surrogate_solve_ms": {
+    "mean": 21.30069489455006,
+    "p95": 24.405122350435704,
+    "max": 32.391635002568364
+  },
+  "mode_b_update_ms": {
+    "mean": 6.13399453771611,
+    "p95": 7.844247727189213,
+    "max": 9.21479007229209
+  },
+  "change_step": 60,
+  "n_steps": 120,
+  "notes": {
+    "physics_baseline": "rebuild Dynamic + setupNLP at change step (matches deep_dynamics scripts)",
+    "surrogate": "native CasADi export with weights as NLP parameters (Mode B), no rebuild",
+    "surrogate_weights": "computed online from measured dv via OnlineLinearRegressor (toy ensemble)"
+  }
+}

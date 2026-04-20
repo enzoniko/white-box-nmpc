@@ -1,0 +1,87 @@
+{
+  "seed": 42,
+  "device_trained": "cpu",
+  "orca_params": {
+    "lf": 0.029,
+    "lr": 0.033,
+    "mass": 0.041,
+    "Iz": 2.78e-05,
+    "Bf": 2.579,
+    "Cf": 1.2,
+    "Df": 0.192,
+    "Br": 3.3852,
+    "Cr": 1.2691,
+    "Dr": 0.1737,
+    "Cm1": 0.287,
+    "Cm2": 0.0545,
+    "Cr0": 0.0518,
+    "Cr2": 0.00035
+  },
+  "static_params": [
+    0.04100000113248825,
+    2.7800000680144876e-05
+  ],
+  "training": {
+    "n_train": 80000,
+    "epochs": 6,
+    "batch_size": 2048,
+    "lr": 0.001,
+    "sampling_ranges": {
+      "vx": [
+        0.2,
+        6.0
+      ],
+      "vy": [
+        -1.5,
+        1.5
+      ],
+      "omega": [
+        -8.0,
+        8.0
+      ],
+      "delta": [
+        -0.35,
+        0.35
+      ],
+      "pwm": [
+        -0.5,
+        1.0
+      ]
+    }
+  },
+  "hss_config": {
+    "hidden_dim": 64,
+    "n_layers": 4,
+    "state_scale": [
+      6.0,
+      2.0,
+      10.0
+    ],
+    "control_scale": [
+      0.4,
+      1.0
+    ],
+    "static_scale": [
+      0.05,
+      5e-05
+    ],
+    "output_scale": [
+      5.0,
+      5.0,
+      100.0
+    ]
+  },
+  "n_specialists": 4,
+  "mu_scale_grid": [
+    0.6000000238418579,
+    0.8666666746139526,
+    1.1333333253860474,
+    1.399999976158142
+  ],
+  "files": [
+    "specialist_000.pt",
+    "specialist_001.pt",
+    "specialist_002.pt",
+    "specialist_003.pt"
+  ]
+}

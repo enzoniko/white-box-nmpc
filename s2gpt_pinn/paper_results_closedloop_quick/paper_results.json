@@ -1,0 +1,103 @@
+{
+  "config": {
+    "out_dir": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/paper_results_closedloop_quick",
+    "dt": 0.02,
+    "horizon": 6,
+    "T": 120,
+    "seed": 42,
+    "n_warmup": 5,
+    "n_solves": 5,
+    "device": "cpu",
+    "n_specialists": 6,
+    "hidden_dim": 16,
+    "n_layers": 2,
+    "window_size": 50,
+    "reg": 0.0001,
+    "top_k": 4,
+    "use_theta": true
+  },
+  "setup1_overhead": {
+    "eval_ms_callback": 0.23114619019906968,
+    "eval_ms_native": 0.017194749671034515,
+    "speedup": 13.442835436473258
+  },
+  "setup2_setup_and_solve": {
+    "build_ms": {
+      "physics_mu": 484.89467694889754,
+      "ens_mu": 213.5265968972817,
+      "ens_w": 183.74173901975155
+    },
+    "solve_ms": {
+      "physics_mu": {
+        "mean_ms": 10.671262838877738,
+        "p95_ms": 14.528683270327747,
+        "max_ms": 15.238580061122775
+      },
+      "ens_mu": {
+        "mean_ms": 12.414889642968774,
+        "p95_ms": 19.89617522340268,
+        "max_ms": 20.946532022207975
+      },
+      "ens_w": {
+        "mean_ms": 31.51679045986384,
+        "p95_ms": 39.89595666062087,
+        "max_ms": 40.63496505841613
+      }
+    }
+  },
+  "setup3_adaptation_recovery": {
+    "mode_b_update_ms": {
+      "mean": 7.9047967165630935,
+      "p95": 9.513071802211925,
+      "max": 86.09005296602845
+    },
+    "mode_b_residual": {
+      "final": 4.459686528374444,
+      "mean": 4.958156274474614
+    }
+  },
+  "setup4_closed_loop_tracking": {
+    "tracking_rmse_vx": {
+      "phys_theta": 82.23640930440739,
+      "phys_baked": 82.23640930440739,
+      "ens_mu": 82.23640930440739,
+      "ens_w": 82.23640930440739,
+      "ens_w_topk": 82.23640930440739
+    },
+    "solve_ms": {
+      "phys_theta": {
+        "mean": 11.292410987045836,
+        "p95": 14.823633409105241,
+        "max": 16.115652048029006
+      },
+      "phys_baked": {
+        "mean": 11.197555189983559,
+        "p95": 15.01567995874211,
+        "max": 15.743111027404666
+      },
+      "ens_mu": {
+        "mean": 18.924452648145937,
+        "p95": 33.799621963407844,
+        "max": 44.84948597382754
+      },
+      "ens_w": {
+        "mean": 27.7605916122992,
+        "p95": 42.713540128897876,
+        "max": 53.8346009561792
+      },
+      "ens_w_topk": {
+        "mean": 27.567499471797035,
+        "p95": 42.19167693518102,
+        "max": 45.13453005347401
+      }
+    },
+    "mode_b_update_ms": {
+      "mean": 5.373140557340401,
+      "p95": 7.220995507668704,
+      "max": 7.570096058771014
+    },
+    "physics_rebuild_ms": {
+      "at_change": null
+    }
+  }
+}

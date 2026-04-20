@@ -1,0 +1,17 @@
+# S²GPT-PINN Requirements
+# Neural surrogate for NMPC with pre-computed analytic Jacobians
+
+# Core dependencies
+torch>=2.0.0
+numpy>=1.24.0
+casadi>=3.6.0
+
+# Optimization
+scipy>=1.10.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Progress bars
+tqdm>=4.65.0
+

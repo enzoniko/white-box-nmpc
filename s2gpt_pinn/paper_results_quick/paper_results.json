@@ -1,0 +1,57 @@
+{
+  "config": {
+    "out_dir": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/paper_results_quick",
+    "dt": 0.02,
+    "horizon": 6,
+    "T": 120,
+    "seed": 42,
+    "n_warmup": 5,
+    "n_solves": 10,
+    "device": "cpu",
+    "n_specialists": 4,
+    "hidden_dim": 16,
+    "n_layers": 2,
+    "window_size": 50,
+    "reg": 0.0001
+  },
+  "setup1_overhead": {
+    "eval_ms_callback": 0.16450234514195472,
+    "eval_ms_native": 0.014655760023742914,
+    "speedup": 11.224415852569527
+  },
+  "setup2_setup_and_solve": {
+    "build_ms": {
+      "physics_mu": 321.36762293521315,
+      "ens_mu": 141.6923770448193,
+      "ens_w": 123.62671503797174
+    },
+    "solve_ms": {
+      "physics_mu": {
+        "mean_ms": 15.948263194877654,
+        "p95_ms": 18.65717705222778,
+        "max_ms": 18.91099999193102
+      },
+      "ens_mu": {
+        "mean_ms": 26.90073970006779,
+        "p95_ms": 37.86200374015607,
+        "max_ms": 39.14895607158542
+      },
+      "ens_w": {
+        "mean_ms": 29.831251711584628,
+        "p95_ms": 35.122783022234216,
+        "max_ms": 35.63907300122082
+      }
+    }
+  },
+  "setup3_adaptation_recovery": {
+    "mode_b_update_ms": {
+      "mean": 5.968450258175532,
+      "p95": 6.874258071184157,
+      "max": 133.25574900954962
+    },
+    "mode_b_residual": {
+      "final": 3.819410141286622,
+      "mean": 3.7967864325094793
+    }
+  }
+}

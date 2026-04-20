@@ -1,0 +1,6 @@
+{
+  "one_step_rmse_in_manifold": 0.019256432832505117,
+  "one_step_p95_in_manifold": 0.028152319739520593,
+  "one_step_rmse_out_of_manifold": 0.0013840918049852996,
+  "one_step_p95_out_of_manifold": 0.002607793780438072
+}

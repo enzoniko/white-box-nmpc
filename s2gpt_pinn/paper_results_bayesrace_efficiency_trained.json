@@ -1,0 +1,28 @@
+{
+  "build_ms": {
+    "physics": 286.63761203642935,
+    "surrogate_native": 13685.167804011144,
+    "surrogate_callback": 38.86562504339963
+  },
+  "solve_ms": {
+    "physics": {
+      "mean_ms": 9.489768403000198,
+      "p95_ms": 15.101649961434301,
+      "max_ms": 17.639382043853402
+    },
+    "surrogate_native": {
+      "mean_ms": 676.9096602743957,
+      "p95_ms": 746.0367891937493,
+      "max_ms": 801.4907110482454
+    },
+    "surrogate_callback": {
+      "mean_ms": 11044.5791734237,
+      "p95_ms": 11731.546488642925,
+      "max_ms": 11860.635685967281
+    }
+  },
+  "notes": {
+    "callback_solver": "limited-memory Hessian (no 2nd derivatives through callback)",
+    "surrogate": "trained library loaded from /home/enzo/HYDRA/NMPC/s2gpt_pinn/orca_library_trained (timing benchmark; accuracy not evaluated here)"
+  }
+}

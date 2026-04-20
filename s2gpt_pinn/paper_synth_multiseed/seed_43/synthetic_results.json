@@ -1,0 +1,45 @@
+{
+  "config": {
+    "T": 400,
+    "dt": 0.02,
+    "seed": 43,
+    "lib_dir": "/home/enzo/HYDRA/NMPC/s2gpt_pinn/orca_library_trained",
+    "mu_grid": [
+      0.6000000238418579,
+      0.7142857313156128,
+      0.8285714387893677,
+      0.9428571462631226,
+      1.0571428537368774,
+      1.1714285612106323,
+      1.2857142686843872,
+      1.399999976158142
+    ],
+    "mu_in": 1.0,
+    "mu_out": 1.7499999701976776,
+    "mu_step": 200
+  },
+  "one_step_state_error": {
+    "rmse_in_manifold": 0.5787774805636025,
+    "p95_in_manifold": 1.217087352045876,
+    "rmse_out_of_manifold": 1.379340412458345,
+    "p95_out_of_manifold": 3.8506142097871305
+  },
+  "one_step_vx_error": {
+    "rmse_in_manifold": 0.023639855439630528,
+    "p95_in_manifold": 0.05424579057702983,
+    "rmse_out_of_manifold": 0.02377965781185511,
+    "p95_out_of_manifold": 0.0572478240229031
+  },
+  "one_step_accel_error": {
+    "rmse_in_manifold": 28.938872849582804,
+    "p95_in_manifold": 60.85436524104666,
+    "rmse_out_of_manifold": 68.96701908557333,
+    "p95_out_of_manifold": 192.53071009650967
+  },
+  "one_step_dvx_error": {
+    "rmse_in_manifold": 1.181992757532286,
+    "p95_in_manifold": 2.7122894666391435,
+    "rmse_out_of_manifold": 1.188982882379421,
+    "p95_out_of_manifold": 2.862391202914668
+  }
+}
